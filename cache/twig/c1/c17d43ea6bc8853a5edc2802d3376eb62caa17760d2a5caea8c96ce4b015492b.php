@@ -35,7 +35,9 @@ class __TwigTemplate_b226e424ff6693be4de5fc53a13c83e88f74e465bb58f3e16cb916a3e33
 <section class=\"section modular-text ";
         // line 4
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "class", []);
-        echo " bg-gray\">
+        echo " ";
+        echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "body_classes", []);
+        echo "\">
     <section class=\"container ";
         // line 5
         echo ($context["grid_size"] ?? null);
@@ -90,7 +92,7 @@ class __TwigTemplate_b226e424ff6693be4de5fc53a13c83e88f74e465bb58f3e16cb916a3e33
 
     public function getDebugInfo()
     {
-        return array (  75 => 19,  69 => 16,  66 => 15,  60 => 12,  54 => 9,  51 => 8,  49 => 7,  45 => 6,  41 => 5,  37 => 4,  34 => 3,  32 => 2,  30 => 1,);
+        return array (  77 => 19,  71 => 16,  68 => 15,  62 => 12,  56 => 9,  53 => 8,  51 => 7,  47 => 6,  43 => 5,  37 => 4,  34 => 3,  32 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -106,7 +108,7 @@ class __TwigTemplate_b226e424ff6693be4de5fc53a13c83e88f74e465bb58f3e16cb916a3e33
         return new Source("{% set grid_size = theme_var('grid-size') %}
 {% set image = page.media.images|first %}
 
-<section class=\"section modular-text {{ page.header.class}} bg-gray\">
+<section class=\"section modular-text {{ page.header.class}} {{ page.header.body_classes}}\">
     <section class=\"container {{ grid_size }}\">
         <div class=\"columns {{ page.header.image_align|default('align-right') }}\">
             {% if image %}

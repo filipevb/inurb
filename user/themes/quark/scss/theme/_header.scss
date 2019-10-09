@@ -10,6 +10,14 @@
   background: $light-color;
   color: $dark-color;
 
+  section.container{
+    height: 100%;
+  }
+
+  nav.navbar{
+    height: 100%;
+  }
+
   a {
     color: $dark-color;
   }
@@ -45,7 +53,7 @@
   }
 
   .navbar-section {
-    height: $header-height-large;
+    height: 100%;
     @extend .default-animation;
 
     @include breakpoint(md) {
@@ -81,7 +89,7 @@ body.header-fixed.header-animated {
     height: $header-height-small;
 
     .navbar-section {
-      height: $header-height-small;
+      height: 100%;
     }
 
     .logo {

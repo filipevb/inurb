@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1570291058,
-    'checksum' => 'cb931b65df5d5d3ec3e7d6de681bb4c7',
+    'timestamp' => 1570655136,
+    'checksum' => 'ecc049e2ce001367ff024e446b838eba',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -51,7 +51,7 @@ return [
             ],
             'themes/quark' => [
                 'file' => 'user/config/themes/quark.yaml',
-                'modified' => 1570291002
+                'modified' => 1570655136
             ]
         ],
         'system/config' => [
@@ -1102,18 +1102,19 @@ node_modules'
                 'header-fixed' => true,
                 'header-animated' => true,
                 'header-dark' => true,
-                'header-transparent' => false,
+                'header-transparent' => true,
                 'sticky-footer' => true,
+                'blog-page' => '/blog',
                 'spectre' => [
                     'exp' => false,
                     'icons' => false
                 ],
                 'custom_logo' => [
-                    'user/themes/quark/images/logo/Lineage_OS_Logo.png' => [
-                        'name' => 'Lineage_OS_Logo.png',
-                        'type' => 'image/png',
-                        'size' => 108224,
-                        'path' => 'user/themes/quark/images/logo/Lineage_OS_Logo.png'
+                    'user/themes/quark/images/logo/INURB Logo Vetor.svg' => [
+                        'name' => 'INURB Logo Vetor.svg',
+                        'type' => 'image/svg+xml',
+                        'size' => 3077,
+                        'path' => 'user/themes/quark/images/logo/INURB Logo Vetor.svg'
                     ]
                 ]
             ]

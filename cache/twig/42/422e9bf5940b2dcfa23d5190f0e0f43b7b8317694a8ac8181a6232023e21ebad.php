@@ -37,7 +37,7 @@ class __TwigTemplate_74efb835280dec7cf5d2cbf4bf31009d0ff7ea260dbca2a152271e89520
         if (($context["hero_image"] ?? null)) {
             echo "style=\"background-image: url('";
             echo $this->getAttribute(($context["hero_image"] ?? null), "url", []);
-            echo "');\"";
+            echo "'); height:100vh;\"";
         }
         echo ">
     <div class=\"image-overlay\"></div>
@@ -82,7 +82,7 @@ class __TwigTemplate_74efb835280dec7cf5d2cbf4bf31009d0ff7ea260dbca2a152271e89520
 
     public function getSourceContext()
     {
-        return new Source("<section id=\"{{ id }}\" class=\"section modular-hero hero {{ page.header.hero_classes }} {{ page.header.background.parallax ? 'parallax' : '' }}\" {% if hero_image %}style=\"background-image: url('{{ hero_image.url }}');\"{% endif %}>
+        return new Source("<section id=\"{{ id }}\" class=\"section modular-hero hero {{ page.header.hero_classes }} {{ page.header.background.parallax ? 'parallax' : '' }}\" {% if hero_image %}style=\"background-image: url('{{ hero_image.url }}'); height:100vh;\"{% endif %}>
     <div class=\"image-overlay\"></div>
     <section class=\"container {{ grid_size }}\" style=\"text-align: {{ page.header.hero_align|default('center') }}\">
         {{ content|raw }}
