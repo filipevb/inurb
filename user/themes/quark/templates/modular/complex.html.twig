@@ -1,0 +1,49 @@
+{% set grid_size = theme_var('grid-size') %}
+{% set columns = 'col-12 col-md-12 col-sm-12'  %}
+{% set firstImage = page.media.images|first %}
+
+
+
+<section class="section modular-complex {{ page.header.class}} {{ page.header.body_classes}}">
+
+        <section class="container {{ grid_size }}">
+            <div class="complex-header {{ page.header.image_align|default('align-right') }}">
+               <div class="complex-header-content">
+                  <h2>
+                     {{ page.header.title }}
+                  </h2>
+                  <div>
+                     {{ content|markdown }}
+                  </div>
+               </div>   
+               {% if firstImage %}               
+                  <div class="complex-header-image ">
+                     {{ firstImage.html|raw }}
+                  </div>
+               {% endif %}
+            </div>
+
+            <div class="columns complex-rows">
+                {% for item in page.header.complex %}
+                   <div class="row item-row {{ columns }} {{ item.item_class }} {{ item.image_align|default('align-right') }}">
+                        {% if item.image %}
+                           <div class="column col-8 col-md-12">
+                                 <h3 class="item-header">{{ item.header }}</h3>
+                                 <div class="item-text">{{ item.text|markdown }}</div>
+                          </div>
+                          <div class="column col-4 col-md-12 item-image">
+                              <img src="{{ item.image|first.path }}" alt="{{ item.header }}" class="img-fluid">
+                          </div>
+                        {% else %}
+                           <div class="column col-12">
+                              <h3 class="item-header">{{ item.header }}</h3>
+                              <div class="item-text">{{ item.text|markdown }}</div>
+                          </div>
+                        {% endif %}
+                   </div>
+                {% endfor %}
+            </div>
+
+        </section>
+
+</section>

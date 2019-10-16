@@ -56,7 +56,7 @@ class __TwigTemplate_31a285c02a2c746b0b94ace1e991cc96199c911c87c4fb6fae2205c1c7b
             // line 10
             echo twig_escape_filter($this->env, ($context["base_url_relative"] ?? null), "html", null, true);
             echo "\">
-            ";
+            <!-- ";
             // line 11
             if (($context["custom_admin_logo"] ?? null)) {
                 // line 12
@@ -76,10 +76,11 @@ class __TwigTemplate_31a285c02a2c746b0b94ace1e991cc96199c911c87c4fb6fae2205c1c7b
                 // line 16
                 echo "            ";
             }
-            // line 17
-            echo "        </a>
+            echo " -->
+            <h2 style=\"margin: 0;\">INURB</h2>
+        </a>
         <a class=\"front-end hint--left\" data-hint=\"";
-            // line 18
+            // line 19
             echo twig_escape_filter($this->env, $this->env->getExtension('Grav\Plugin\Admin\Twig\AdminTwigExtension')->tuFilter("PLUGIN_ADMIN.VIEW_SITE_TIP"), "html", null, true);
             echo "\" target=\"_blank\" href=\"";
             echo twig_escape_filter($this->env, ($context["base_url_relative_frontend"] ?? null), "html", null, true);
@@ -101,7 +102,7 @@ class __TwigTemplate_31a285c02a2c746b0b94ace1e991cc96199c911c87c4fb6fae2205c1c7b
 
     public function getDebugInfo()
     {
-        return array (  83 => 18,  80 => 17,  77 => 16,  74 => 15,  71 => 14,  63 => 12,  61 => 11,  57 => 10,  52 => 9,  44 => 6,  39 => 4,  35 => 3,  32 => 2,  30 => 1,);
+        return array (  84 => 19,  77 => 16,  74 => 15,  71 => 14,  63 => 12,  61 => 11,  57 => 10,  52 => 9,  44 => 6,  39 => 4,  35 => 3,  32 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -124,12 +125,13 @@ class __TwigTemplate_31a285c02a2c746b0b94ace1e991cc96199c911c87c4fb6fae2205c1c7b
 {% else %}
     <div class=\"admin-logo {{ custom_admin_logo ? 'custom-logo' : 'default-logo' }}\">
         <a href=\"{{ base_url_relative }}\">
-            {% if custom_admin_logo %}
+            <!-- {% if custom_admin_logo %}
                 <img src=\"{{ url(custom_admin_logo) }}\" title=\"{{ site.title }}\" />
             {% else %}
                 {% include('@admin-images/grav-small.svg') %}
                 {% include('@admin-images/grav-regular.svg') %}
-            {% endif %}
+            {% endif %} -->
+            <h2 style=\"margin: 0;\">INURB</h2>
         </a>
         <a class=\"front-end hint--left\" data-hint=\"{{ \"PLUGIN_ADMIN.VIEW_SITE_TIP\"|tu }}\" target=\"_blank\" href=\"{{ base_url_relative_frontend }}\"> <i class=\"fa fa-external-link\"></i></a>
     </div>

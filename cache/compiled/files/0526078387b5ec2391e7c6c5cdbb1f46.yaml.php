@@ -2,15 +2,29 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/inurb/user/config/site.yaml',
-    'modified' => 1570199784,
+    'modified' => 1571261419,
     'data' => [
-        'title' => 'Grav',
+        'title' => 'Inurb',
+        'default_lang' => 'pt',
         'author' => [
-            'name' => 'Joe Bloggs',
-            'email' => 'joe@test.com'
+            'name' => 'Filipe Vilas-Boas',
+            'email' => 'filipemvb@gmail.com'
+        ],
+        'taxonomies' => [
+            0 => 'category',
+            1 => 'tag'
         ],
         'metadata' => [
-            'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+            'description' => 'A INURB nasce em 2019, apostando no desenvolvimento de soluções técnicas e inovadoras no âmbito do turismo, com o objetivo principal de contribuir significativamente para a satisfação das necessidades dos turistas. '
+        ],
+        'summary' => [
+            'enabled' => true,
+            'format' => 'short',
+            'size' => 300,
+            'delimiter' => '==='
+        ],
+        'blog' => [
+            'route' => '/blog'
         ]
     ]
 ];

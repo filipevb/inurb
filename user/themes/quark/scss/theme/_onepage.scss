@@ -1,3 +1,7 @@
+h1, h2, h3, h4, h5{
+  margin-top: 0;
+}
+
 .modular-hero {
   #to-start {
     bottom: 3.5rem;
@@ -117,6 +121,68 @@
   padding-bottom: 4rem;
 
   .columns.left {
+    flex-direction: row-reverse;
+  }
+}
+
+.modular-complex{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  .complex-header{
+    position: relative;
+    padding: 4rem 0;
+    overflow: hidden;
+
+    .complex-header-image{
+      position: absolute;
+      top: 50%;
+    }
+    &.left{
+      .complex-header-content{
+        text-align: right;
+      }
+      .complex-header-image{
+        left: 30px;        
+        transform: translateY(-50%) rotate(-30deg);
+      }
+    }
+    &.right{
+      .complex-header-image{
+        right: 30px;            
+        transform: translateY(-50%) rotate(30deg);
+      }
+    }
+  }
+
+  .item-row{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .item-header{
+      text-transform: uppercase;
+      color: #927D53;
+      position: relative;
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 2rem;
+
+      &::after{
+        content: " ";
+        width: 120%;
+        height: 1px;
+        background-color: #927D53;
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+      }
+    }
+    .item-text{
+      color: white;
+    }
+  }
+
+  .item-row.left{
     flex-direction: row-reverse;
   }
 }

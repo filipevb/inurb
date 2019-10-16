@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/inurb/user/config/system.yaml',
-    'modified' => 1570291058,
+    'modified' => 1571262163,
     'data' => [
         'absolute_urls' => false,
         'param_sep' => ':',
@@ -145,7 +145,7 @@ return [
             ]
         ],
         'debugger' => [
-            'enabled' => false,
+            'enabled' => true,
             'shutdown' => [
                 'close_connection' => true
             ],

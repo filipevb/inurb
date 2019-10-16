@@ -8,12 +8,13 @@
 {% else %}
     <div class="admin-logo {{ custom_admin_logo ? 'custom-logo' : 'default-logo' }}">
         <a href="{{ base_url_relative }}">
-            {% if custom_admin_logo %}
+            <!-- {% if custom_admin_logo %}
                 <img src="{{ url(custom_admin_logo) }}" title="{{ site.title }}" />
             {% else %}
                 {% include('@admin-images/grav-small.svg') %}
                 {% include('@admin-images/grav-regular.svg') %}
-            {% endif %}
+            {% endif %} -->
+            <h2 style="margin: 0;">INURB</h2>
         </a>
         <a class="front-end hint--left" data-hint="{{ "PLUGIN_ADMIN.VIEW_SITE_TIP"|tu }}" target="_blank" href="{{ base_url_relative_frontend }}"> <i class="fa fa-external-link"></i></a>
     </div>

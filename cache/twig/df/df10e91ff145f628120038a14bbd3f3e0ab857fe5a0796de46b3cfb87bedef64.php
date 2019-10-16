@@ -27,7 +27,8 @@ class __TwigTemplate_f81910758e8745126b1c3c70224bbd8b9b97789a5a55a71c42be931a30a
     protected function doDisplay(array $context, array $blocks = [])
     {
         // line 1
-        echo "<a href=\"javascript:\" id=\"return-to-top\"> <i class=\"fa fa-chevron-up\"></i> </a>";
+        echo "<a href=\"javascript:\" id=\"return-to-top\"> <i>&nbsp;&nbsp;&nbsp;&nbsp;</i> </a>
+";
     }
 
     public function getTemplateName()
@@ -50,6 +51,7 @@ class __TwigTemplate_f81910758e8745126b1c3c70224bbd8b9b97789a5a55a71c42be931a30a
 
     public function getSourceContext()
     {
-        return new Source("<a href=\"javascript:\" id=\"return-to-top\"> <i class=\"fa fa-chevron-up\"></i> </a>", "partials/backtotop.html.twig", "C:\\xampp\\htdocs\\inurb\\user\\plugins\\backtotop\\templates\\partials\\backtotop.html.twig");
+        return new Source("<a href=\"javascript:\" id=\"return-to-top\"> <i>&nbsp;&nbsp;&nbsp;&nbsp;</i> </a>
+", "partials/backtotop.html.twig", "C:\\xampp\\htdocs\\inurb\\user\\plugins\\backtotop\\templates\\partials\\backtotop.html.twig");
     }
 }

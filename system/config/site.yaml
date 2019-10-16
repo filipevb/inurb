@@ -1,14 +1,14 @@
-title: Grav                                 # Name of the site
-default_lang: en                            # Default language for site (potentially used by theme)
+title: Inurb                                 # Name of the site
+default_lang: pt                            # Default language for site (potentially used by theme)
 
 author:
-  name: John Appleseed                      # Default author name
-  email: 'john@example.com'                 # Default author email
+  name: Filipe Vilas-Boas                     # Default author name
+  email: 'filipemvb@gmail.com'                 # Default author email
 
 taxonomies: [category,tag]                  # Arbitrary list of taxonomy types
 
 metadata:
-  description: 'My Grav Site'               # Site description
+  description: 'A INURB nasce em 2019, apostando no desenvolvimento de soluções técnicas e inovadoras no âmbito do turismo, com o objetivo principal de contribuir significativamente para a satisfação das necessidades dos turistas. '               # Site description
 
 summary:
   enabled: true                             # enable or disable summary of page

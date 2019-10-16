@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/inurb/user/config/themes/quark.yaml',
-    'modified' => 1570291002,
+    'modified' => 1570655136,
     'data' => [
         'enabled' => true,
         'production-mode' => true,
@@ -10,18 +10,19 @@ return [
         'header-fixed' => true,
         'header-animated' => true,
         'header-dark' => true,
-        'header-transparent' => false,
+        'header-transparent' => true,
         'sticky-footer' => true,
+        'blog-page' => '/blog',
         'spectre' => [
             'exp' => false,
             'icons' => false
         ],
         'custom_logo' => [
-            'user/themes/quark/images/logo/Lineage_OS_Logo.png' => [
-                'name' => 'Lineage_OS_Logo.png',
-                'type' => 'image/png',
-                'size' => 108224,
-                'path' => 'user/themes/quark/images/logo/Lineage_OS_Logo.png'
+            'user/themes/quark/images/logo/INURB Logo Vetor.svg' => [
+                'name' => 'INURB Logo Vetor.svg',
+                'type' => 'image/svg+xml',
+                'size' => 3077,
+                'path' => 'user/themes/quark/images/logo/INURB Logo Vetor.svg'
             ]
         ]
     ]

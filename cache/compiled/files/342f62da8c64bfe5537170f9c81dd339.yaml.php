@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/inurb/user/plugins/backtotop/blueprints.yaml',
-    'modified' => 1570123170,
+    'modified' => 1571251159,
     'data' => [
         'name' => 'Back to Top',
-        'version' => '0.5.0',
+        'version' => '0.5.2',
         'description' => 'This grav plugin displays a "Back to Top" link at the end of every section, so the reader can jump back up to the table of contents. The plugin integrates the js lib "Return to Top Arrow" by [rdallaire](https://codepen.io/rdallaire/pen/apoyx).',
         'icon' => 'chevron-circle-up',
         'author' => [

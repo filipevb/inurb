@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1570655136,
-    'checksum' => 'ecc049e2ce001367ff024e446b838eba',
+    'timestamp' => 1571262166,
+    'checksum' => '1e7a8be90bb739aa1f04aab978ec5247',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -35,7 +35,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1570199784
+                'modified' => 1571261419
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -43,7 +43,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1570291058
+                'modified' => 1571262163
             ],
             'themes/bootstrap4' => [
                 'file' => 'user/config/themes/bootstrap4.yaml',
@@ -69,7 +69,7 @@ return [
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1568933188
+                'modified' => 1571261362
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
@@ -91,7 +91,7 @@ return [
             ],
             'plugins/backtotop' => [
                 'file' => 'user/plugins/backtotop/backtotop.yaml',
-                'modified' => 1570123170
+                'modified' => 1571251159
             ],
             'plugins/bootstrapper' => [
                 'file' => 'user/plugins/bootstrapper/bootstrapper.yaml',
@@ -828,18 +828,18 @@ node_modules'
             'salt' => 'e25zMBgf81Tdx4'
         ],
         'site' => [
-            'title' => 'Grav',
-            'default_lang' => 'en',
+            'title' => 'Inurb',
+            'default_lang' => 'pt',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@test.com'
+                'name' => 'Filipe Vilas-Boas',
+                'email' => 'filipemvb@gmail.com'
             ],
             'taxonomies' => [
                 0 => 'category',
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+                'description' => 'A INURB nasce em 2019, apostando no desenvolvimento de soluções técnicas e inovadoras no âmbito do turismo, com o objetivo principal de contribuir significativamente para a satisfação das necessidades dos turistas. '
             ],
             'summary' => [
                 'enabled' => true,
@@ -1032,7 +1032,7 @@ node_modules'
                 ]
             ],
             'debugger' => [
-                'enabled' => false,
+                'enabled' => true,
                 'shutdown' => [
                     'close_connection' => true
                 ],
