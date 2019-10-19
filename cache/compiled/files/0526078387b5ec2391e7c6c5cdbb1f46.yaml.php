@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/inurb/user/config/site.yaml',
-    'modified' => 1571261419,
+    'modified' => 1571503571,
     'data' => [
         'title' => 'Inurb',
         'default_lang' => 'pt',
@@ -25,6 +25,10 @@ return [
         ],
         'blog' => [
             'route' => '/blog'
+        ],
+        'social' => [
+            'urlFacebook' => 'oo',
+            'urlInstagram' => 'aa'
         ]
     ]
 ];

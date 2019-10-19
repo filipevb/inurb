@@ -27,20 +27,29 @@ class __TwigTemplate_794cfd46efa070eaa271a66c7b1adecf7fd65b92b4b623b8ac506bdbb7b
     protected function doDisplay(array $context, array $blocks = [])
     {
         // line 1
-        echo "<section id=\"footer\" class=\"section bg-gray\">
-    <section class=\"container ";
+        $context["currentYear"] = twig_date_format_filter($this->env, ($context["now"] ?? null), "Y");
         // line 2
+        echo "
+<section id=\"footer\" class=\"section bg-gray\">
+    <section class=\"container ";
+        // line 4
         echo ($context["grid_size"] ?? null);
         echo "\">
-        <p><a href=\"http://getgrav.org\">Grav</a> was <i class=\"fa fa-code\"></i> with <i class=\"fa fa-heart-o pulse \"></i> by <a href=\"https://trilby.media\">Trilby Media</a>.</p>
+        <p>";
+        // line 5
+        echo $this->getAttribute(($context["site"] ?? null), "title", []);
+        echo " &copy; ";
+        echo ($context["currentYear"] ?? null);
+        echo " - Todos os direitos reservados.</p>
     </section>
 </section>
+
 ";
-        // line 7
+        // line 10
         if ($this->getAttribute($this->getAttribute($this->getAttribute(($context["config"] ?? null), "plugins", []), "backtotop", []), "enabled", [])) {
-            // line 8
+            // line 11
             echo "    ";
-            $this->loadTemplate("partials/backtotop.html.twig", "partials/footer.html.twig", 8)->display($context);
+            $this->loadTemplate("partials/backtotop.html.twig", "partials/footer.html.twig", 11)->display($context);
         }
     }
 
@@ -56,7 +65,7 @@ class __TwigTemplate_794cfd46efa070eaa271a66c7b1adecf7fd65b92b4b623b8ac506bdbb7b
 
     public function getDebugInfo()
     {
-        return array (  42 => 8,  40 => 7,  33 => 2,  30 => 1,);
+        return array (  51 => 11,  49 => 10,  40 => 5,  36 => 4,  32 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -69,11 +78,14 @@ class __TwigTemplate_794cfd46efa070eaa271a66c7b1adecf7fd65b92b4b623b8ac506bdbb7b
 
     public function getSourceContext()
     {
-        return new Source("<section id=\"footer\" class=\"section bg-gray\">
+        return new Source("{% set currentYear = now|date(\"Y\") %}
+
+<section id=\"footer\" class=\"section bg-gray\">
     <section class=\"container {{ grid_size }}\">
-        <p><a href=\"http://getgrav.org\">Grav</a> was <i class=\"fa fa-code\"></i> with <i class=\"fa fa-heart-o pulse \"></i> by <a href=\"https://trilby.media\">Trilby Media</a>.</p>
+        <p>{{ site.title }} &copy; {{ currentYear }} - Todos os direitos reservados.</p>
     </section>
 </section>
+
 {# Render the backtotop link #}
 {% if config.plugins.backtotop.enabled %}
     {% include 'partials/backtotop.html.twig' %}

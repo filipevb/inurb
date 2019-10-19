@@ -122,3 +122,23 @@ form:
                     help: PLUGIN_ADMIN.CUSTOM_ROUTES_HELP
                     placeholder_key: PLUGIN_ADMIN.CUSTOM_ROUTES_PLACEHOLDER_KEY
                     placeholder_value: PLUGIN_ADMIN.CUSTOM_ROUTES_PLACEHOLDER_VALUE
+
+        social:
+            type: section
+            title: PLUGIN_ADMIN.SOCIAL
+            underline: true
+
+            fields:
+                social.urlFacebook:
+                    type: text
+                    # size: small
+                    label: 'Facebook'
+                    validate:
+                        type: text
+
+                social.urlInstagram:
+                    type: text
+                    # size: small
+                    label: 'Instagram'
+                    validate:
+                        type: text

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/inurb/user/config/system.yaml',
-    'modified' => 1571262163,
+    'modified' => 1571503202,
     'data' => [
         'absolute_urls' => false,
         'param_sep' => ':',
@@ -52,7 +52,7 @@ return [
             ],
             'markdown' => [
                 'extra' => false,
-                'auto_line_breaks' => false,
+                'auto_line_breaks' => true,
                 'auto_url_links' => false,
                 'escape_markup' => false,
                 'special_chars' => [

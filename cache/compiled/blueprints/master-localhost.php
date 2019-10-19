@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1571262169,
-    'checksum' => '67698e2777883df5035956e4ab288606',
+    'timestamp' => 1571503620,
+    'checksum' => 'f489d4db2101347df1428dc62bbaf2cd',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -29,7 +29,7 @@ return [
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1568933188
+                'modified' => 1571503530
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
@@ -648,6 +648,29 @@ return [
                 'type' => 'array',
                 'label' => 'PLUGIN_ADMIN.CUSTOM_ROUTES',
                 'name' => 'site.routes',
+                'validation' => 'loose'
+            ],
+            'site.social' => [
+                'type' => '_parent',
+                'name' => 'site.social',
+                'form_field' => false
+            ],
+            'site.social.urlFacebook' => [
+                'type' => 'text',
+                'label' => 'Facebook',
+                'validate' => [
+                    'type' => 'text'
+                ],
+                'name' => 'site.social.urlFacebook',
+                'validation' => 'loose'
+            ],
+            'site.social.urlInstagram' => [
+                'type' => 'text',
+                'label' => 'Instagram',
+                'validate' => [
+                    'type' => 'text'
+                ],
+                'name' => 'site.social.urlInstagram',
                 'validation' => 'loose'
             ],
             'streams' => [
@@ -5226,7 +5249,11 @@ return [
                 ],
                 'metadata' => 'site.metadata',
                 'redirects' => 'site.redirects',
-                'routes' => 'site.routes'
+                'routes' => 'site.routes',
+                'social' => [
+                    'urlFacebook' => 'site.social.urlFacebook',
+                    'urlInstagram' => 'site.social.urlInstagram'
+                ]
             ],
             'streams' => [
                 'schemes' => [

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/inurb/system/blueprints/config/site.yaml',
-    'modified' => 1568933188,
+    'modified' => 1571503530,
     'data' => [
         'title' => 'PLUGIN_ADMIN.SITE',
         'form' => [
@@ -135,6 +135,27 @@ return [
                             'help' => 'PLUGIN_ADMIN.CUSTOM_ROUTES_HELP',
                             'placeholder_key' => 'PLUGIN_ADMIN.CUSTOM_ROUTES_PLACEHOLDER_KEY',
                             'placeholder_value' => 'PLUGIN_ADMIN.CUSTOM_ROUTES_PLACEHOLDER_VALUE'
+                        ]
+                    ]
+                ],
+                'social' => [
+                    'type' => 'section',
+                    'title' => 'PLUGIN_ADMIN.SOCIAL',
+                    'underline' => true,
+                    'fields' => [
+                        'social.urlFacebook' => [
+                            'type' => 'text',
+                            'label' => 'Facebook',
+                            'validate' => [
+                                'type' => 'text'
+                            ]
+                        ],
+                        'social.urlInstagram' => [
+                            'type' => 'text',
+                            'label' => 'Instagram',
+                            'validate' => [
+                                'type' => 'text'
+                            ]
                         ]
                     ]
                 ]

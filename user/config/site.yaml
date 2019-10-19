@@ -15,3 +15,6 @@ summary:
   delimiter: '==='
 blog:
   route: /blog
+social:
+  urlFacebook: oo
+  urlInstagram: aa

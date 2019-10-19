@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1571262166,
-    'checksum' => '1e7a8be90bb739aa1f04aab978ec5247',
+    'timestamp' => 1571503604,
+    'checksum' => '1371f31af79ddbf618aa5060de8b873a',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -35,7 +35,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1571261419
+                'modified' => 1571503571
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -43,7 +43,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1571262163
+                'modified' => 1571503202
             ],
             'themes/bootstrap4' => [
                 'file' => 'user/config/themes/bootstrap4.yaml',
@@ -69,7 +69,7 @@ return [
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1571261362
+                'modified' => 1571503558
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
@@ -851,6 +851,10 @@ node_modules'
             'routes' => NULL,
             'blog' => [
                 'route' => '/blog'
+            ],
+            'social' => [
+                'urlFacebook' => 'oo',
+                'urlInstagram' => 'aa'
             ]
         ],
         'streams' => [
@@ -933,7 +937,7 @@ node_modules'
                 ],
                 'markdown' => [
                     'extra' => false,
-                    'auto_line_breaks' => false,
+                    'auto_line_breaks' => true,
                     'auto_url_links' => false,
                     'escape_markup' => false,
                     'special_chars' => [
